@@ -34,7 +34,7 @@ class TasslimApp extends StatelessWidget {
             return const SplashScreen();
           }
           return auth.isAuthenticated 
-              ? const DashboardScreen() 
+              ? DashboardScreen() 
               : const LoginScreen();
         },
       ),

@@ -31,11 +31,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _tabs = [
-    const DashboardHome(),
-    const InventoryScreen(),
-    const IssuePartScreen(),
-    const ReportsScreen(),
-    const BikeHistoryScreen(),
+    DashboardHome(),
+    InventoryScreen(),
+    IssuePartScreen(),
+    ReportsScreen(),
+    BikeHistoryScreen(),
+
   ];
 
   @override
@@ -51,7 +52,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             icon: const Icon(FontAwesomeIcons.circleUser, size: 20),
             onPressed: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (_) => const SettingsScreen()),
+              MaterialPageRoute(builder: (_) => SettingsScreen()),
             ),
           ),
         ],

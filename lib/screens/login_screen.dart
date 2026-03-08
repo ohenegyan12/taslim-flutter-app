@@ -5,6 +5,8 @@ import 'package:animate_do/animate_do.dart';
 import '../providers/auth_provider.dart';
 import '../constants/app_colors.dart';
 import '../utils/toast_utils.dart';
+import 'dashboard_screen.dart';
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -31,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
         // Explicitly navigate to Dashboard on success
         Navigator.pushAndRemoveUntil(
           context,
-          MaterialPageRoute(builder: (context) => const DashboardScreen()),
+          MaterialPageRoute(builder: (context) => DashboardScreen()),
           (route) => false,
         );
       } else {
