@@ -1,0 +1,13 @@
+js/env.js
+node_modules/
+backend/node_modules/
+backend/inventory.db
+backend/.env
+.env
+.DS_Store
+npm-debug.log
+yarn-error.log
+frontend/js/env.js
+backend/dist
+
+PULL_REQUEST.md
